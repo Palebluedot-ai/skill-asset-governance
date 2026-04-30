@@ -40,7 +40,14 @@ jobs:
         with:
           script: |
             const fs = require('fs');
+            const crypto = require('crypto');
             const body = fs.readFileSync('reports/pr-comment.md', 'utf8');
+            const fpObj = JSON.parse(fs.readFileSync('reports/pr-comment.fingerprint.json', 'utf8'));
+            const fpHash = crypto.createHash('sha256').update(JSON.stringify(fpObj)).digest('hex');
+            const marker = '<!-- skill-governance-report -->';
+            const hashMarker = `<!-- governance-fp:${fpHash} -->`;
+            const bodyWithHash = `${body}\n${hashMarker}\n`;
+
             const issue_number = context.payload.pull_request.number;
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
@@ -48,20 +55,26 @@ jobs:
               issue_number,
               per_page: 100
             });
-            const marker = '<!-- skill-governance-report -->';
+
             const existing = comments.find(c => c.user?.type === 'Bot' && c.body && c.body.includes(marker));
             if (existing) {
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: existing.id,
-                body
-              });
+              const m = existing.body.match(/<!-- governance-fp:([a-f0-9]{64}) -->/);
+              const oldHash = m ? m[1] : '';
+              if (oldHash === fpHash) {
+                core.info('No FAIL/WARN change; skip comment update.');
+              } else {
+                await github.rest.issues.updateComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  comment_id: existing.id,
+                  body: bodyWithHash
+                });
+              }
             } else {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number,
-                body
+                body: bodyWithHash
               });
             }

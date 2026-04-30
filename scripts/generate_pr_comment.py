@@ -51,8 +51,20 @@ def main():
     top('Top INFO', info)
     lines.append('> Full artifacts are attached in workflow artifacts: `skill-governance-reports`.')
 
-    out.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    body = '\n'.join(lines) + '\n'
+    out.write_text(body, encoding='utf-8')
+
+    # fingerprint only FAIL/WARN for noise control in CI PR comment updates
+    fingerprint = {
+        'status': status,
+        'fail': fail,
+        'warn': warn,
+    }
+    fp_path = out.with_suffix('.fingerprint.json')
+    fp_path.write_text(json.dumps(fingerprint, ensure_ascii=False, sort_keys=True, indent=2), encoding='utf-8')
+
     print(f'wrote {out}')
+    print(f'wrote {fp_path}')
 
 
 if __name__ == '__main__':
