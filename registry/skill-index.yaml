@@ -1,0 +1,14 @@
+skills:
+  - name: github-repo-management
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: platform
+    canonical: true
+
+  - name: hermes-agent
+    domain: autonomous-ai-agents
+    status: active
+    version: 2.0.0
+    owner: platform
+    canonical: true

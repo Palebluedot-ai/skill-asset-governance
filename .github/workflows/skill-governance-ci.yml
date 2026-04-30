@@ -1,0 +1,19 @@
+name: skill-governance-ci
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Lint skill assets
+        run: python3 scripts/lint_skill_assets.py --root .
+      - name: Build report
+        run: python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
