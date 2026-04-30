@@ -15,5 +15,12 @@ jobs:
           python-version: '3.11'
       - name: Lint skill assets
         run: python3 scripts/lint_skill_assets.py --root .
+      - name: Optional sync check from Hermes skills (if available)
+        run: |
+          if [ -d "$HOME/.hermes/skills" ]; then
+            python3 scripts/sync_from_hermes_skills.py --source "$HOME/.hermes/skills" --out registry/skill-index.yaml
+          else
+            echo "~/.hermes/skills not found on CI runner, skip sync"
+          fi
       - name: Build report
         run: python3 scripts/build_skill_report.py --root . --out reports/skill-report.md

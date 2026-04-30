@@ -31,9 +31,19 @@ skill-asset-governance/
 
 ```bash
 cd ~/projects/skill-asset-governance
+# 1) 先用 Hermes Skills Curator 做官方整理（去重/归档/重命名）
+# 2) 再跑本仓库做治理审计与CI阻断
 python3 scripts/lint_skill_assets.py --root .
 python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
+python3 scripts/sync_from_hermes_skills.py --source ~/.hermes/skills --out registry/skill-index.yaml
 ```
+
+## Curator + Governance 分工
+
+- **Skills Curator**：负责“资产整理动作”（清洗、去重、迁移、归档）
+- **Governance Repo**：负责“规则执行与审计证据”（policy、lint、report、CI）
+
+原则：**Curator 先执行，Governance 后验收**。
 
 ## 防崩溃结论（先给答案）
 

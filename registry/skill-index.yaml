@@ -1,14 +1,920 @@
 skills:
-  - name: github-repo-management
-    domain: github
+  - name: apple-notes
+    domain: apple
     status: active
-    version: 1.1.0
-    owner: platform
+    version: 1.0.0
+    owner: curator
     canonical: true
+    source_path: /Users/chao/.hermes/skills/apple/apple-notes/SKILL.md
+
+  - name: apple-reminders
+    domain: apple
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/apple/apple-reminders/SKILL.md
+
+  - name: findmy
+    domain: apple
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/apple/findmy/SKILL.md
+
+  - name: imessage
+    domain: apple
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/apple/imessage/SKILL.md
+
+  - name: agent-orchestration-playbook-bootstrap
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/agent-orchestration-playbook-bootstrap/SKILL.md
+
+  - name: claude-code
+    domain: autonomous-ai-agents
+    status: active
+    version: 2.2.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/claude-code/SKILL.md
+
+  - name: codex
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/codex/SKILL.md
+
+  - name: droid-cli-exec-failure-triage
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/droid-cli-exec-failure-triage/SKILL.md
 
   - name: hermes-agent
     domain: autonomous-ai-agents
     status: active
     version: 2.0.0
-    owner: platform
+    owner: curator
     canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+
+  - name: hermes-codex-backup-fallback
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-codex-backup-fallback/SKILL.md
+
+  - name: hermes-discord-threaded-orchestration-setup
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-discord-threaded-orchestration-setup/SKILL.md
+
+  - name: hermes-feishu-lark-docs-permission-debug
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-feishu-lark-docs-permission-debug/SKILL.md
+
+  - name: hermes-feishu-lark-gateway-connect-and-debug
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-feishu-lark-gateway-connect-and-debug/SKILL.md
+
+  - name: hermes-repo-safety-compliance-pack
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-repo-safety-compliance-pack/SKILL.md
+
+  - name: hermes-skill-asset-governance-bootstrap
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-skill-asset-governance-bootstrap/SKILL.md
+
+  - name: hermes-telegram-gateway-connect-and-debug
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/hermes-telegram-gateway-connect-and-debug/SKILL.md
+
+  - name: opencode
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.2.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/opencode/SKILL.md
+
+  - name: workflow-orchestration-hermes-claude-memory-sync
+    domain: autonomous-ai-agents
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/autonomous-ai-agents/workflow-orchestration-hermes-claude-memory-sync/SKILL.md
+
+  - name: architecture-diagram
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/architecture-diagram/SKILL.md
+
+  - name: ascii-art
+    domain: creative
+    status: active
+    version: 4.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/ascii-art/SKILL.md
+
+  - name: ascii-video
+    domain: creative
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/ascii-video/SKILL.md
+
+  - name: baoyu-comic
+    domain: creative
+    status: active
+    version: 1.56.1
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/baoyu-comic/SKILL.md
+
+  - name: baoyu-infographic
+    domain: creative
+    status: active
+    version: 1.56.1
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/baoyu-infographic/SKILL.md
+
+  - name: ideation
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/creative-ideation/SKILL.md
+
+  - name: design-md
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/design-md/SKILL.md
+
+  - name: excalidraw
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/excalidraw/SKILL.md
+
+  - name: manim-video
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/manim-video/SKILL.md
+
+  - name: p5js
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/p5js/SKILL.md
+
+  - name: pixel-art
+    domain: creative
+    status: active
+    version: 2.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/pixel-art/SKILL.md
+
+  - name: popular-web-designs
+    domain: creative
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/popular-web-designs/SKILL.md
+
+  - name: songwriting-and-ai-music
+    domain: creative
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/creative/songwriting-and-ai-music/SKILL.md
+
+  - name: jupyter-live-kernel
+    domain: data-science
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/data-science/jupyter-live-kernel/SKILL.md
+
+  - name: webhook-subscriptions
+    domain: devops
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/devops/webhook-subscriptions/SKILL.md
+
+  - name: dogfood
+    domain: dogfood
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/dogfood/SKILL.md
+
+  - name: himalaya
+    domain: email
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/email/himalaya/SKILL.md
+
+  - name: minecraft-modpack-server
+    domain: gaming
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/gaming/minecraft-modpack-server/SKILL.md
+
+  - name: pokemon-player
+    domain: gaming
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/gaming/pokemon-player/SKILL.md
+
+  - name: codebase-inspection
+    domain: github
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/codebase-inspection/SKILL.md
+
+  - name: git-worktree-rename-and-push-branch
+    domain: github
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/git-worktree-rename-and-push-branch/SKILL.md
+
+  - name: gitguardian-secret-incident-runtime-triage
+    domain: github
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/gitguardian-secret-incident-runtime-triage/SKILL.md
+
+  - name: github-auth
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/github-auth/SKILL.md
+
+  - name: github-code-review
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/github-code-review/SKILL.md
+
+  - name: github-issues
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/github-issues/SKILL.md
+
+  - name: github-pr-workflow
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/github-pr-workflow/SKILL.md
+
+  - name: github-repo-management
+    domain: github
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/github/github-repo-management/SKILL.md
+
+  - name: find-nearby
+    domain: leisure
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/leisure/find-nearby/SKILL.md
+
+  - name: mcporter
+    domain: mcp
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mcp/mcporter/SKILL.md
+
+  - name: native-mcp
+    domain: mcp
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mcp/native-mcp/SKILL.md
+
+  - name: gif-search
+    domain: media
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/media/gif-search/SKILL.md
+
+  - name: heartmula
+    domain: media
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/media/heartmula/SKILL.md
+
+  - name: songsee
+    domain: media
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/media/songsee/SKILL.md
+
+  - name: spotify
+    domain: media
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/media/spotify/SKILL.md
+
+  - name: youtube-content
+    domain: media
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/media/youtube-content/SKILL.md
+
+  - name: modal-serverless-gpu
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/cloud/modal/SKILL.md
+
+  - name: evaluating-llms-harness
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/evaluation/lm-evaluation-harness/SKILL.md
+
+  - name: weights-and-biases
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/evaluation/weights-and-biases/SKILL.md
+
+  - name: huggingface-hub
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/huggingface-hub/SKILL.md
+
+  - name: gguf-quantization
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/gguf/SKILL.md
+
+  - name: guidance
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/guidance/SKILL.md
+
+  - name: llama-cpp
+    domain: mlops
+    status: active
+    version: 2.1.2
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/llama-cpp/SKILL.md
+
+  - name: obliteratus
+    domain: mlops
+    status: active
+    version: 2.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/obliteratus/SKILL.md
+
+  - name: outlines
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/outlines/SKILL.md
+
+  - name: serving-llms-vllm
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/inference/vllm/SKILL.md
+
+  - name: audiocraft-audio-generation
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/models/audiocraft/SKILL.md
+
+  - name: clip
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/models/clip/SKILL.md
+
+  - name: segment-anything-model
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/models/segment-anything/SKILL.md
+
+  - name: stable-diffusion-image-generation
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/models/stable-diffusion/SKILL.md
+
+  - name: whisper
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/models/whisper/SKILL.md
+
+  - name: dspy
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/research/dspy/SKILL.md
+
+  - name: axolotl
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/axolotl/SKILL.md
+
+  - name: grpo-rl-training
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/grpo-rl-training/SKILL.md
+
+  - name: peft-fine-tuning
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/peft/SKILL.md
+
+  - name: pytorch-fsdp
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/pytorch-fsdp/SKILL.md
+
+  - name: fine-tuning-with-trl
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/trl-fine-tuning/SKILL.md
+
+  - name: unsloth
+    domain: mlops
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/mlops/training/unsloth/SKILL.md
+
+  - name: inbox-distillation-cron
+    domain: note-taking
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/note-taking/inbox-distillation-cron/SKILL.md
+
+  - name: obsidian
+    domain: note-taking
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/note-taking/obsidian/SKILL.md
+
+  - name: portable-memory-system-bootstrap
+    domain: note-taking
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/note-taking/portable-memory-system-bootstrap/SKILL.md
+
+  - name: google-workspace
+    domain: productivity
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/google-workspace/SKILL.md
+
+  - name: linear
+    domain: productivity
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/linear/SKILL.md
+
+  - name: maps
+    domain: productivity
+    status: active
+    version: 1.2.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/maps/SKILL.md
+
+  - name: nano-pdf
+    domain: productivity
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/nano-pdf/SKILL.md
+
+  - name: notion
+    domain: productivity
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/notion/SKILL.md
+
+  - name: ocr-and-documents
+    domain: productivity
+    status: active
+    version: 2.3.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/ocr-and-documents/SKILL.md
+
+  - name: powerpoint
+    domain: productivity
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/productivity/powerpoint/SKILL.md
+
+  - name: godmode
+    domain: red-teaming
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/red-teaming/godmode/SKILL.md
+
+  - name: arxiv
+    domain: research
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/research/arxiv/SKILL.md
+
+  - name: blogwatcher
+    domain: research
+    status: active
+    version: 2.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/research/blogwatcher/SKILL.md
+
+  - name: llm-wiki
+    domain: research
+    status: active
+    version: 2.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/research/llm-wiki/SKILL.md
+
+  - name: polymarket
+    domain: research
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/research/polymarket/SKILL.md
+
+  - name: research-paper-writing
+    domain: research
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/research/research-paper-writing/SKILL.md
+
+  - name: openhue
+    domain: smart-home
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/smart-home/openhue/SKILL.md
+
+  - name: xitter
+    domain: social-media
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/social-media/xitter/SKILL.md
+
+  - name: xurl
+    domain: social-media
+    status: active
+    version: 1.1.1
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/social-media/xurl/SKILL.md
+
+  - name: abcd-architecture-argumentation
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/abcd-architecture-argumentation/SKILL.md
+
+  - name: discord-orchestration-v13-robustness-package
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/discord-orchestration-v13-robustness-package/SKILL.md
+
+  - name: inbox-radar-batch-override-safe-apply
+    domain: software-development
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/inbox-radar-batch-override-safe-apply/SKILL.md
+
+  - name: inbox-radar-override-calibration-safe-loop
+    domain: software-development
+    status: active
+    version: 0.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/inbox-radar-override-calibration-safe-loop/SKILL.md
+
+  - name: inbox-radar-split-pooled-owner-safely
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/inbox-radar-split-pooled-owner-safely/SKILL.md
+
+  - name: legacy-python-quote-flow-to-html-parity
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/legacy-python-quote-flow-to-html-parity/SKILL.md
+
+  - name: llm-data-source-stability-audit
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/llm-data-source-stability-audit/SKILL.md
+
+  - name: mac-vibe-bootstrap-two-phase
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/mac-vibe-bootstrap-two-phase/SKILL.md
+
+  - name: multi-agent-track-planning-abcd
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/multi-agent-track-planning-abcd/SKILL.md
+
+  - name: orchestration-roadmap-merge-bridge
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/orchestration-roadmap-merge-bridge/SKILL.md
+
+  - name: otc-quote-live-mid-refresh-without-input-interruption
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/otc-quote-live-mid-refresh-without-input-interruption/SKILL.md
+
+  - name: otc-quote-lp-firm-price-markup-merge
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/otc-quote-lp-firm-price-markup-merge/SKILL.md
+
+  - name: otc-quote-message-format-change-tdd
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/otc-quote-message-format-change-tdd/SKILL.md
+
+  - name: otc-quote-worktree-sync-and-verify
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/otc-quote-worktree-sync-and-verify/SKILL.md
+
+  - name: plan
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/plan/SKILL.md
+
+  - name: pyinstaller-exe-unpack-and-triage
+    domain: software-development
+    status: active
+    version: 1.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/pyinstaller-exe-unpack-and-triage/SKILL.md
+
+  - name: requesting-code-review
+    domain: software-development
+    status: active
+    version: 2.0.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/requesting-code-review/SKILL.md
+
+  - name: subagent-driven-development
+    domain: software-development
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/subagent-driven-development/SKILL.md
+
+  - name: systematic-debugging
+    domain: software-development
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/systematic-debugging/SKILL.md
+
+  - name: test-driven-development
+    domain: software-development
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/test-driven-development/SKILL.md
+
+  - name: writing-plans
+    domain: software-development
+    status: active
+    version: 1.1.0
+    owner: curator
+    canonical: true
+    source_path: /Users/chao/.hermes/skills/software-development/writing-plans/SKILL.md
