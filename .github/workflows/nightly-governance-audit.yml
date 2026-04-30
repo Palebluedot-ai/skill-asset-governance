@@ -1,0 +1,66 @@
+name: nightly-governance-audit
+
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  nightly-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Secret scan
+        run: python3 scripts/scan_secrets.py --root .
+
+      - name: Waiver expiry check (fail on expired)
+        run: python3 scripts/check_waiver_expiry.py --waivers policies/waivers.yaml --warn-days 7 --fail-on-expired
+
+      - name: Registry schema validation
+        run: python3 scripts/validate_registry.py --registry registry/skill-index.yaml
+
+      - name: Build reports
+        run: |
+          python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
+
+      - name: Upload nightly artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-governance-reports
+          path: reports/
+
+      - name: Raise alert issue on failure (issue-only notify)
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '[ALERT] Nightly governance audit failed';
+            const body = `Nightly governance audit failed at ${new Date().toISOString()}\n\nPlease check workflow run logs and artifacts.`;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['alert', 'governance']
+              });
+            }

@@ -51,6 +51,8 @@ python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
 - `FAIL > 0`：CI **阻断**（红灯）
 - `WARN > 0`：默认仅提示（黄灯，不阻断）
 - 可选严格模式：本地执行 `python3 scripts/enforce_gate.py --lint-json reports/lint-report.json --fail-on-warn`
+- 新增安全门：`scripts/scan_secrets.py`（仓库级 secret 扫描）
+- 新增豁免时效门：`scripts/check_waiver_expiry.py`（过期豁免直接阻断）
 
 
 - **Skills Curator**：负责“资产整理动作”（清洗、去重、迁移、归档）
@@ -61,6 +63,9 @@ python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
 ## 审计与回滚
 
 ```bash
+# 安装本地 pre-commit secret 扫描
+bash scripts/install_precommit_hook.sh
+
 # Curator 运行前后分别保存 index 快照，然后生成审计报告
 cp registry/skill-index.yaml reports/index-before.yaml
 # ... run curator + sync ...
@@ -69,6 +74,9 @@ python3 scripts/curator_audit.py \
   --before reports/index-before.yaml \
   --after reports/index-after.yaml \
   --out reports/curator-run-latest.md
+
+# waiver 到期检查（过期失败）
+python3 scripts/check_waiver_expiry.py --waivers policies/waivers.yaml --warn-days 7 --fail-on-expired
 
 # 若需要回滚 registry 到某次提交
 python3 scripts/rollback_registry.py --to <commit_sha>

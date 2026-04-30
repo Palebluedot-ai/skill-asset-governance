@@ -23,6 +23,10 @@ jobs:
           else
             echo "INFO: ~/.hermes/skills not present in GitHub runner; lint skipped"
           fi
+      - name: Secret scan (repo)
+        run: python3 scripts/scan_secrets.py --root .
+      - name: Waiver expiry check (warn near expiry, fail on expired)
+        run: python3 scripts/check_waiver_expiry.py --waivers policies/waivers.yaml --warn-days 7 --fail-on-expired
       - name: Validate registry schema
         run: python3 scripts/validate_registry.py --registry registry/skill-index.yaml
       - name: Enforce governance gate (FAIL blocks, WARN allowed)
