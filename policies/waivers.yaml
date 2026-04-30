@@ -1,0 +1,3 @@
+# Temporary governance waivers.
+# Each waiver must include id, type, target, owner, expires_on(YYYY-MM-DD), reason.
+waivers: []

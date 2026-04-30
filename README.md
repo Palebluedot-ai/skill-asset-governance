@@ -32,10 +32,16 @@ skill-asset-governance/
 ```bash
 cd ~/projects/skill-asset-governance
 # 1) 先用 Hermes Skills Curator 做官方整理（去重/归档/重命名）
-# 2) 再跑本仓库做治理审计与CI阻断
-python3 scripts/lint_skill_assets.py --root .
-python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
+# 2) 同步 registry（本地执行）
 python3 scripts/sync_from_hermes_skills.py --source ~/.hermes/skills --out registry/skill-index.yaml
+
+# 3) 治理检查（check-only，不改写 skills）
+python3 scripts/lint_skill_assets.py \
+  --source ~/.hermes/skills \
+  --waivers policies/waivers.yaml \
+  --report-json reports/lint-report.json
+python3 scripts/validate_registry.py --registry registry/skill-index.yaml
+python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
 ```
 
 ## Curator + Governance 分工
@@ -44,6 +50,23 @@ python3 scripts/sync_from_hermes_skills.py --source ~/.hermes/skills --out regis
 - **Governance Repo**：负责“规则执行与审计证据”（policy、lint、report、CI）
 
 原则：**Curator 先执行，Governance 后验收**。
+
+## 审计与回滚
+
+```bash
+# Curator 运行前后分别保存 index 快照，然后生成审计报告
+cp registry/skill-index.yaml reports/index-before.yaml
+# ... run curator + sync ...
+cp registry/skill-index.yaml reports/index-after.yaml
+python3 scripts/curator_audit.py \
+  --before reports/index-before.yaml \
+  --after reports/index-after.yaml \
+  --out reports/curator-run-latest.md
+
+# 若需要回滚 registry 到某次提交
+python3 scripts/rollback_registry.py --to <commit_sha>
+```
+
 
 ## 防崩溃结论（先给答案）
 
