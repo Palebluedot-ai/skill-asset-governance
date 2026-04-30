@@ -25,6 +25,8 @@ jobs:
           fi
       - name: Validate registry schema
         run: python3 scripts/validate_registry.py --registry registry/skill-index.yaml
+      - name: Enforce governance gate (FAIL blocks, WARN allowed)
+        run: python3 scripts/enforce_gate.py --lint-json reports/lint-report.json
       - name: Build report
         run: python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
       - name: Generate PR governance summary

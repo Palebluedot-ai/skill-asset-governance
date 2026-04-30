@@ -46,6 +46,13 @@ python3 scripts/build_skill_report.py --root . --out reports/skill-report.md
 
 ## Curator + Governance 分工
 
+## CI 门禁策略
+
+- `FAIL > 0`：CI **阻断**（红灯）
+- `WARN > 0`：默认仅提示（黄灯，不阻断）
+- 可选严格模式：本地执行 `python3 scripts/enforce_gate.py --lint-json reports/lint-report.json --fail-on-warn`
+
+
 - **Skills Curator**：负责“资产整理动作”（清洗、去重、迁移、归档）
 - **Governance Repo**：负责“规则执行与审计证据”（policy、lint、report、CI）
 
