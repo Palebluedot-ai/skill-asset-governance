@@ -1,6 +1,6 @@
 # Skill Asset Report
 
-Generated: 2026-05-29T13:42:46.421747Z
+Generated: 2026-05-29T13:45:29.203296Z
 
 Source: `registry/skill-index.yaml`
 
