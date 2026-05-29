@@ -1,8 +1,125 @@
 # Skill Asset Report
 
-Generated: 2026-04-30T12:16:32.901636Z
+Generated: 2026-05-29T13:42:46.421747Z
 
-Total skills: 0
+Source: `registry/skill-index.yaml`
 
-| name | version | path |
-|---|---:|---|
+Total skills: 115
+
+| name | domain | status | version | source_path |
+|---|---|---|---:|---|
+| abcd-architecture-argumentation | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/abcd-architecture-argumentation/SKILL.md` |
+| agent-orchestration-playbook-bootstrap | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/agent-orchestration-playbook-bootstrap/SKILL.md` |
+| apple-notes | apple | active | 1.0.0 | `/Users/chao/.hermes/skills/apple/apple-notes/SKILL.md` |
+| apple-reminders | apple | active | 1.0.0 | `/Users/chao/.hermes/skills/apple/apple-reminders/SKILL.md` |
+| architecture-diagram | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/architecture-diagram/SKILL.md` |
+| arxiv | research | active | 1.0.0 | `/Users/chao/.hermes/skills/research/arxiv/SKILL.md` |
+| ascii-art | creative | active | 4.0.0 | `/Users/chao/.hermes/skills/creative/ascii-art/SKILL.md` |
+| ascii-video | creative | active | 0.0.0 | `/Users/chao/.hermes/skills/creative/ascii-video/SKILL.md` |
+| audiocraft-audio-generation | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/models/audiocraft/SKILL.md` |
+| axolotl | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/axolotl/SKILL.md` |
+| baoyu-comic | creative | active | 1.56.1 | `/Users/chao/.hermes/skills/creative/baoyu-comic/SKILL.md` |
+| baoyu-infographic | creative | active | 1.56.1 | `/Users/chao/.hermes/skills/creative/baoyu-infographic/SKILL.md` |
+| blogwatcher | research | active | 2.0.0 | `/Users/chao/.hermes/skills/research/blogwatcher/SKILL.md` |
+| claude-code | autonomous-ai-agents | active | 2.2.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/claude-code/SKILL.md` |
+| clip | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/models/clip/SKILL.md` |
+| codebase-inspection | github | active | 1.0.0 | `/Users/chao/.hermes/skills/github/codebase-inspection/SKILL.md` |
+| codex | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/codex/SKILL.md` |
+| design-md | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/design-md/SKILL.md` |
+| discord-orchestration-v13-robustness-package | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/discord-orchestration-v13-robustness-package/SKILL.md` |
+| dogfood | dogfood | active | 1.0.0 | `/Users/chao/.hermes/skills/dogfood/SKILL.md` |
+| droid-cli-exec-failure-triage | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/droid-cli-exec-failure-triage/SKILL.md` |
+| dspy | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/research/dspy/SKILL.md` |
+| evaluating-llms-harness | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/evaluation/lm-evaluation-harness/SKILL.md` |
+| excalidraw | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/excalidraw/SKILL.md` |
+| find-nearby | leisure | active | 1.0.0 | `/Users/chao/.hermes/skills/leisure/find-nearby/SKILL.md` |
+| findmy | apple | active | 1.0.0 | `/Users/chao/.hermes/skills/apple/findmy/SKILL.md` |
+| fine-tuning-with-trl | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/trl-fine-tuning/SKILL.md` |
+| gguf-quantization | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/inference/gguf/SKILL.md` |
+| gif-search | media | active | 1.1.0 | `/Users/chao/.hermes/skills/media/gif-search/SKILL.md` |
+| git-worktree-rename-and-push-branch | github | active | 1.0.0 | `/Users/chao/.hermes/skills/github/git-worktree-rename-and-push-branch/SKILL.md` |
+| gitguardian-secret-incident-runtime-triage | github | active | 1.0.0 | `/Users/chao/.hermes/skills/github/gitguardian-secret-incident-runtime-triage/SKILL.md` |
+| github-auth | github | active | 1.1.0 | `/Users/chao/.hermes/skills/github/github-auth/SKILL.md` |
+| github-code-review | github | active | 1.1.0 | `/Users/chao/.hermes/skills/github/github-code-review/SKILL.md` |
+| github-issues | github | active | 1.1.0 | `/Users/chao/.hermes/skills/github/github-issues/SKILL.md` |
+| github-pr-workflow | github | active | 1.1.0 | `/Users/chao/.hermes/skills/github/github-pr-workflow/SKILL.md` |
+| github-repo-management | github | active | 1.1.0 | `/Users/chao/.hermes/skills/github/github-repo-management/SKILL.md` |
+| godmode | red-teaming | active | 1.0.0 | `/Users/chao/.hermes/skills/red-teaming/godmode/SKILL.md` |
+| google-workspace | productivity | active | 1.0.0 | `/Users/chao/.hermes/skills/productivity/google-workspace/SKILL.md` |
+| grpo-rl-training | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/grpo-rl-training/SKILL.md` |
+| guidance | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/inference/guidance/SKILL.md` |
+| heartmula | media | active | 1.0.0 | `/Users/chao/.hermes/skills/media/heartmula/SKILL.md` |
+| hermes-agent | autonomous-ai-agents | active | 2.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-agent/SKILL.md` |
+| hermes-codex-backup-fallback | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-codex-backup-fallback/SKILL.md` |
+| hermes-discord-threaded-orchestration-setup | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-discord-threaded-orchestration-setup/SKILL.md` |
+| hermes-feishu-lark-docs-permission-debug | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-feishu-lark-docs-permission-debug/SKILL.md` |
+| hermes-feishu-lark-gateway-connect-and-debug | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-feishu-lark-gateway-connect-and-debug/SKILL.md` |
+| hermes-repo-safety-compliance-pack | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-repo-safety-compliance-pack/SKILL.md` |
+| hermes-skill-asset-governance-bootstrap | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-skill-asset-governance-bootstrap/SKILL.md` |
+| hermes-telegram-gateway-connect-and-debug | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/hermes-telegram-gateway-connect-and-debug/SKILL.md` |
+| himalaya | email | active | 1.0.0 | `/Users/chao/.hermes/skills/email/himalaya/SKILL.md` |
+| huggingface-hub | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/huggingface-hub/SKILL.md` |
+| ideation | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/creative-ideation/SKILL.md` |
+| imessage | apple | active | 1.0.0 | `/Users/chao/.hermes/skills/apple/imessage/SKILL.md` |
+| inbox-distillation-cron | note-taking | active | 1.1.0 | `/Users/chao/.hermes/skills/note-taking/inbox-distillation-cron/SKILL.md` |
+| inbox-radar-batch-override-safe-apply | software-development | active | 0.0.0 | `/Users/chao/.hermes/skills/software-development/inbox-radar-batch-override-safe-apply/SKILL.md` |
+| inbox-radar-override-calibration-safe-loop | software-development | active | 0.0.0 | `/Users/chao/.hermes/skills/software-development/inbox-radar-override-calibration-safe-loop/SKILL.md` |
+| inbox-radar-split-pooled-owner-safely | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/inbox-radar-split-pooled-owner-safely/SKILL.md` |
+| jupyter-live-kernel | data-science | active | 1.0.0 | `/Users/chao/.hermes/skills/data-science/jupyter-live-kernel/SKILL.md` |
+| legacy-python-quote-flow-to-html-parity | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/legacy-python-quote-flow-to-html-parity/SKILL.md` |
+| linear | productivity | active | 1.0.0 | `/Users/chao/.hermes/skills/productivity/linear/SKILL.md` |
+| llama-cpp | mlops | active | 2.1.2 | `/Users/chao/.hermes/skills/mlops/inference/llama-cpp/SKILL.md` |
+| llm-data-source-stability-audit | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/llm-data-source-stability-audit/SKILL.md` |
+| llm-wiki | research | active | 2.1.0 | `/Users/chao/.hermes/skills/research/llm-wiki/SKILL.md` |
+| mac-vibe-bootstrap-two-phase | software-development | active | 1.1.0 | `/Users/chao/.hermes/skills/software-development/mac-vibe-bootstrap-two-phase/SKILL.md` |
+| manim-video | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/manim-video/SKILL.md` |
+| maps | productivity | active | 1.2.0 | `/Users/chao/.hermes/skills/productivity/maps/SKILL.md` |
+| mcporter | mcp | active | 1.0.0 | `/Users/chao/.hermes/skills/mcp/mcporter/SKILL.md` |
+| minecraft-modpack-server | gaming | active | 0.0.0 | `/Users/chao/.hermes/skills/gaming/minecraft-modpack-server/SKILL.md` |
+| modal-serverless-gpu | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/cloud/modal/SKILL.md` |
+| multi-agent-track-planning-abcd | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/multi-agent-track-planning-abcd/SKILL.md` |
+| nano-pdf | productivity | active | 1.0.0 | `/Users/chao/.hermes/skills/productivity/nano-pdf/SKILL.md` |
+| native-mcp | mcp | active | 1.0.0 | `/Users/chao/.hermes/skills/mcp/native-mcp/SKILL.md` |
+| notion | productivity | active | 1.0.0 | `/Users/chao/.hermes/skills/productivity/notion/SKILL.md` |
+| obliteratus | mlops | active | 2.0.0 | `/Users/chao/.hermes/skills/mlops/inference/obliteratus/SKILL.md` |
+| obsidian | note-taking | active | 0.0.0 | `/Users/chao/.hermes/skills/note-taking/obsidian/SKILL.md` |
+| ocr-and-documents | productivity | active | 2.3.0 | `/Users/chao/.hermes/skills/productivity/ocr-and-documents/SKILL.md` |
+| opencode | autonomous-ai-agents | active | 1.2.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/opencode/SKILL.md` |
+| openhue | smart-home | active | 1.0.0 | `/Users/chao/.hermes/skills/smart-home/openhue/SKILL.md` |
+| orchestration-roadmap-merge-bridge | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/orchestration-roadmap-merge-bridge/SKILL.md` |
+| otc-quote-live-mid-refresh-without-input-interruption | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/otc-quote-live-mid-refresh-without-input-interruption/SKILL.md` |
+| otc-quote-lp-firm-price-markup-merge | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/otc-quote-lp-firm-price-markup-merge/SKILL.md` |
+| otc-quote-message-format-change-tdd | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/otc-quote-message-format-change-tdd/SKILL.md` |
+| otc-quote-worktree-sync-and-verify | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/otc-quote-worktree-sync-and-verify/SKILL.md` |
+| outlines | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/inference/outlines/SKILL.md` |
+| p5js | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/p5js/SKILL.md` |
+| peft-fine-tuning | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/peft/SKILL.md` |
+| pixel-art | creative | active | 2.0.0 | `/Users/chao/.hermes/skills/creative/pixel-art/SKILL.md` |
+| plan | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/plan/SKILL.md` |
+| pokemon-player | gaming | active | 0.0.0 | `/Users/chao/.hermes/skills/gaming/pokemon-player/SKILL.md` |
+| polymarket | research | active | 1.0.0 | `/Users/chao/.hermes/skills/research/polymarket/SKILL.md` |
+| popular-web-designs | creative | active | 1.0.0 | `/Users/chao/.hermes/skills/creative/popular-web-designs/SKILL.md` |
+| portable-memory-system-bootstrap | note-taking | active | 1.0.0 | `/Users/chao/.hermes/skills/note-taking/portable-memory-system-bootstrap/SKILL.md` |
+| powerpoint | productivity | active | 0.0.0 | `/Users/chao/.hermes/skills/productivity/powerpoint/SKILL.md` |
+| pyinstaller-exe-unpack-and-triage | software-development | active | 1.0.0 | `/Users/chao/.hermes/skills/software-development/pyinstaller-exe-unpack-and-triage/SKILL.md` |
+| pytorch-fsdp | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/pytorch-fsdp/SKILL.md` |
+| requesting-code-review | software-development | active | 2.0.0 | `/Users/chao/.hermes/skills/software-development/requesting-code-review/SKILL.md` |
+| research-paper-writing | research | active | 1.1.0 | `/Users/chao/.hermes/skills/research/research-paper-writing/SKILL.md` |
+| segment-anything-model | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/models/segment-anything/SKILL.md` |
+| serving-llms-vllm | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/inference/vllm/SKILL.md` |
+| songsee | media | active | 1.0.0 | `/Users/chao/.hermes/skills/media/songsee/SKILL.md` |
+| songwriting-and-ai-music | creative | active | 0.0.0 | `/Users/chao/.hermes/skills/creative/songwriting-and-ai-music/SKILL.md` |
+| spotify | media | active | 1.0.0 | `/Users/chao/.hermes/skills/media/spotify/SKILL.md` |
+| stable-diffusion-image-generation | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/models/stable-diffusion/SKILL.md` |
+| subagent-driven-development | software-development | active | 1.1.0 | `/Users/chao/.hermes/skills/software-development/subagent-driven-development/SKILL.md` |
+| systematic-debugging | software-development | active | 1.1.0 | `/Users/chao/.hermes/skills/software-development/systematic-debugging/SKILL.md` |
+| test-driven-development | software-development | active | 1.1.0 | `/Users/chao/.hermes/skills/software-development/test-driven-development/SKILL.md` |
+| unsloth | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/training/unsloth/SKILL.md` |
+| webhook-subscriptions | devops | active | 1.1.0 | `/Users/chao/.hermes/skills/devops/webhook-subscriptions/SKILL.md` |
+| weights-and-biases | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/evaluation/weights-and-biases/SKILL.md` |
+| whisper | mlops | active | 1.0.0 | `/Users/chao/.hermes/skills/mlops/models/whisper/SKILL.md` |
+| workflow-orchestration-hermes-claude-memory-sync | autonomous-ai-agents | active | 1.0.0 | `/Users/chao/.hermes/skills/autonomous-ai-agents/workflow-orchestration-hermes-claude-memory-sync/SKILL.md` |
+| writing-plans | software-development | active | 1.1.0 | `/Users/chao/.hermes/skills/software-development/writing-plans/SKILL.md` |
+| xitter | social-media | active | 1.0.0 | `/Users/chao/.hermes/skills/social-media/xitter/SKILL.md` |
+| xurl | social-media | active | 1.1.1 | `/Users/chao/.hermes/skills/social-media/xurl/SKILL.md` |
+| youtube-content | media | active | 0.0.0 | `/Users/chao/.hermes/skills/media/youtube-content/SKILL.md` |
